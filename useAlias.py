@@ -23,9 +23,9 @@ def do():
         com = "echo "+ "\""+ command + "\""+ ">> ~/.bash_aliases && source ~/.bash_aliases"
         print(com)
         subprocess.run(["echo "],[command])
-		print("done1")
+        print("done1")
         os.system(com)
-		print(command)
+        print(command)
 
     except Exception as e: print(e)   #print whatever the error is
 
