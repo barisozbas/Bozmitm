@@ -18,7 +18,9 @@ def do():
         #location = os.path.abspath(location)
 
     try:
-        os.system("alias "+name + "= \"cd "+location+" && sudo python3 bozmitm.py\"")
+        command =  "alias "+name + "= \"cd "+location+" && sudo python3 bozmitm.py\""
+        print(command)
+        os.system(command)
 
     except Exception as e: print(e)   #print whatever the error is
 
