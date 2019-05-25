@@ -23,7 +23,7 @@ try:
     useAlias_quest = input("[bozmitm] Make bozmitm a command? [Y/N]")
     useAlias_quest = useAlias_quest.lower()
     if useAlias_quest == "y" or useAlias_quest == "":
-        useAlias.do()
+        #useAlias.do()
 
     update_quest = input("[bozmitm] Install/update needed modules? [Y/N]")
     update_quest = update_quest.lower()
