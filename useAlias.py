@@ -20,9 +20,10 @@ def do():
 
     try:
         command =  "alias "+name + "=\"cd "+location+" && sudo python3 bozmitm.py\""
-        print(command)
-        subprocess.run(["alias "+name + "=\"cd "+location+" && sudo python3 bozmitm.py\""])
-        os.system("alias "+name + "=\"cd "+location+" && sudo python3 bozmitm.py\"")
+        com = "echo "+ command + ">> ~/.bash_aliases && source ~/.bash_aliases"
+        print(com)
+        subprocess.run([com])
+        os.system(com)
 
     except Exception as e: print(e)   #print whatever the error is
 
