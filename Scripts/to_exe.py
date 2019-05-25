@@ -1,7 +1,7 @@
 import mitmproxy
 import socket
 
-localhost = socket.gethostbyname(socket.gethostname())
+localhost = 10.0.0.1
 
 def request(flow):
     if flow.request.host != localhost and flow.request.pretty_url.endswith(".exe"):
