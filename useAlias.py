@@ -1,5 +1,6 @@
 import os
 import sys
+import subprocess
 
 done = 0
 
@@ -20,6 +21,7 @@ def do():
     try:
         command =  "alias "+name + "=\"cd "+location+" && sudo python3 bozmitm.py\""
         print(command)
+        subprocess.run(["alias "+name + "=\"cd "+location+" && sudo python3 bozmitm.py\""])
         os.system("alias "+name + "=\"cd "+location+" && sudo python3 bozmitm.py\"")
 
     except Exception as e: print(e)   #print whatever the error is
