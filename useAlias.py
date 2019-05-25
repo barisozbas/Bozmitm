@@ -1,8 +1,5 @@
 import os
 import sys
-import subprocess
-
-done = 0
 
 def do():
     done = 1
@@ -29,5 +26,4 @@ def do():
 
     except Exception as e: print(e)   #print whatever the error is
 
-if(done != 1):
-    do()
+
