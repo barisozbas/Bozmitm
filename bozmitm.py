@@ -1,7 +1,7 @@
 import os
 import time
 import datetime
-import useAlias
+#import useAlias
 
 me = """
   _              
@@ -22,7 +22,7 @@ try:
 
     useAlias_quest = input("[bozmitm] Make bozmitm a command? [Y/N]")
     useAlias_quest = useAlias_quest.lower()
-    if useAlias_quest == "y" or useAlias_quest == "":
+    #if useAlias_quest == "y" or useAlias_quest == "":
         #useAlias.do()
 
     update_quest = input("[bozmitm] Install/update needed modules? [Y/N]")
@@ -122,6 +122,7 @@ try:
 
 
 except KeyboardInterrupt:
+    print("")
     print("[bozmitm] Keyboard Interrupt. Stopping...")
     print("[bozmitm] Flushing ip tables...")
     os.system("sudo iptables --flush")
