@@ -20,7 +20,7 @@ def do():
     try:
         command =  "alias "+name + "=\"cd "+location+" && sudo python3 bozmitm.py\""
         print(command)
-        os.system(command)
+        os.system("alias "+name + "=\"cd "+location+" && sudo python3 bozmitm.py\"")
 
     except Exception as e: print(e)   #print whatever the error is
 
