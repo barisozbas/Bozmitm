@@ -22,8 +22,8 @@ def do():
         command =  "alias "+name + "=\"cd "+location+" && sudo python3 bozmitm.py\""
         com = "echo "+ "\""+ command + "\""+ ">> ~/.bash_aliases && source ~/.bash_aliases"
         print(com)
-        subprocess.run(["echo "],[command])
-        print("done1")
+        #subprocess.run(["echo "],[command])
+        #print("done1")
         os.system(com)
         print(command)
 
