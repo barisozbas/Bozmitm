@@ -102,14 +102,17 @@ try:
     if (script_quest != ""):
         #if (script_quest[0] != "/"):
          #   script_quest = "/" + script_quest
-        script_quest = "-s " + script_quest
+        script_quest = " -s " + script_quest
+        print(script_quest)
 
     print("[bozmitm] You can find log files of mitmproxy and tshark under the %PATH%/bozmitm/logs directory. ")
 
     print("[bozmitm] Starting mitmproxy in 5 seconds...")
     time.sleep(1)  # 5
+    print("sudo mitmproxy --mode transparent --showhost -w " + path + "/logs/" + mitm_logname + ".mitmproxy" + script_quest)
     mitm_logname = now.strftime("%Y-%m-%d")  # current year month and day
     os.system("sudo mitmproxy --mode transparent --showhost -w " + path + "/logs/" + mitm_logname + ".mitmproxy" + script_quest)
+    
 
     print("[bozmitm] Stopping...")
     print("[bozmitm] Flushing ip tables...")
