@@ -100,8 +100,8 @@ try:
 
     script_quest = input("[mitmproxy] Inject script to modify packets? If yes, enter directory otherwise press enter.")
     if (script_quest != ""):
-        if (script_quest[0] != "/"):
-            script_quest = "/" + script_quest
+        #if (script_quest[0] != "/"):
+         #   script_quest = "/" + script_quest
         script_quest = "-s " + script_quest
 
     print("[bozmitm] You can find log files of mitmproxy and tshark under the %PATH%/bozmitm/logs directory. ")
