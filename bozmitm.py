@@ -109,7 +109,7 @@ try:
     print("[bozmitm] Starting mitmproxy in 5 seconds...")
     time.sleep(1)  # 5
     mitm_logname = now.strftime("%Y-%m-%d")  # current year month and day
-    os.system("sudo mitmproxy --mode transparent -w " + path + "/logs/" + mitm_logname + ".mitmproxy" + script_quest)
+    os.system("sudo mitmproxy --mode transparent --showhost -w " + path + "/logs/" + mitm_logname + ".mitmproxy" + script_quest)
 
     print("[bozmitm] Stopping...")
     print("[bozmitm] Flushing ip tables...")

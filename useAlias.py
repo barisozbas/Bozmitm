@@ -19,7 +19,7 @@ def do():
         #location = os.path.abspath(location)
 
     try:
-        command =  "alias "+name + "=\"cd "+location+" && sudo python3 bozmitm.py\""
+        command =  "alias "+name + "='cd "+location+" && sudo python3 bozmitm.py'"
         com = "echo "+ "\""+ command + "\""+ ">> ~/.bash_aliases && source ~/.bash_aliases"
         print(com)
         #subprocess.run(["echo "],[command])
